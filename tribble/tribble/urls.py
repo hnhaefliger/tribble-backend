@@ -10,4 +10,5 @@ def empty(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/session/', include('browser_sessions.urls')),
+    path('api/text_analysis/', include('text_analysis.urls')),
 ]
