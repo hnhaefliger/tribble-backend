@@ -29,6 +29,8 @@ class SessionViewSet(viewsets.ViewSet):
 
         data = [{
             'id': session.id,
+            'name': session.name,
+            'description': session.description,
             'location': session.location,
             'submitted_at': session.submitted_at,
         } for session in query_set[offset:offset+limit]]
@@ -41,6 +43,8 @@ class SessionViewSet(viewsets.ViewSet):
 
             data = {
                 'id': data.id,
+                'name': data.name,
+                'description': data.description,
                 'location': data.location,
                 'submitted_at': data.submitted_at,
             }
@@ -61,6 +65,8 @@ class SessionViewSet(viewsets.ViewSet):
 
             data = {
                 'id': data.id,
+                'name': data.name,
+                'description': data.description,
                 'location': data.location,
                 'submitted_at': data.submitted_at,
             }

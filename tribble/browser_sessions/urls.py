@@ -3,6 +3,6 @@ from .views import *
 
 router = routers.DefaultRouter()
 
-router.register('session', SessionViewSet, basename='session')
+router.register('', SessionViewSet, basename='session')
 
 urlpatterns = router.urls

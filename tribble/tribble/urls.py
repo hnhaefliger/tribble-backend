@@ -9,5 +9,5 @@ def empty(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/sessions/', include('browser_sessions.urls')),
+    path('api/session/', include('browser_sessions.urls')),
 ]
